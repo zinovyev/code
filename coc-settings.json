@@ -1,0 +1,47 @@
+{
+  "snippets.ultisnips.pythonPrompt": false,
+  "diagnostic.enableSign": true,
+  "diagnostic.enableMessage": "always",
+  "diagnostic.enable": true,
+  "diagnostic.virtualText": false,
+  "diagnostic.messageDelay": 1000,
+  "languageserver": {
+    "ruby-lsp": {
+      "command": "ruby-lsp",
+      "initializationOptions": {
+        "enabledFeatures": {
+          "codeActions": true,
+          "codeLens": true,
+          "completion": true,
+          "definition": true,
+          "diagnostics": true,
+          "documentHighlights": true,
+          "documentLink": true,
+          "documentSymbols": true,
+          "foldingRanges": true,
+          "formatting": true,
+          "hover": true,
+          "inlayHint": true,
+          "onTypeFormatting": true,
+          "selectionRanges": true,
+          "semanticHighlighting": true,
+          "signatureHelp": true,
+          "typeHierarchy": true,
+          "workspaceSymbol": true
+        }
+      },
+      "filetypes": ["ruby"],
+      "featuresConfiguration": {
+        "inlayHint": {
+          "implicitHashValue": true,
+          "implicitRescue": true
+        }
+      },
+      "indexing": {},
+      "formatter": "auto",
+      "linters": [],
+      "experimentalFeaturesEnabled": false
+    }
+  },
+  "coc.preferences.formatOnSave": true
+}
