@@ -11,6 +11,7 @@
 " * For COC ruby: gem install solargraph
 "     * From the project folder: yard gems
 "  * For Telescope: pacman -S fzf ripgrep
+"  * Export the COC_NODE env variable to get the COC use a proper Node version
 "
 
 
