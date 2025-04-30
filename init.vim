@@ -65,6 +65,7 @@ call plug#end()
 " {{{ General options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
+set nocompatible       " Disable compatibility with vi which can cause unexpected issues
 set number             " Set line numers
 set cursorline         " Higlight the current line
 set cursorcolumn       " Higlight the current line
@@ -73,11 +74,19 @@ set shiftwidth=2       " Set indent width to 2 spaces by default
 set expandtab          " Use whitespaces instead of tabs
 set colorcolumn=120    " Set the 120 chars line
 set signcolumn=yes     " Always show the sign column
-"set tags=./tags,tags; " Use project specific tags
-set tags=tags;/        " Use project specific tags
-" set term=xterm
-set mouse=a            " Enable the mouse
-" set clipboard=unnamed
+
+set tags=tags;/                " Use project specific tags
+set mouse=nvi                  " Enable the mouse
+set clipboard+=unnamedplus     " Use system clipboard. Need to install xclip first.
+set splitbelow splitright      " More intuitive splitting
+
+" == Search
+set hlsearch                   " Highlight searches
+set history=1000               " Expand the default history lenght
+set ignorecase                 " Ignore case difference when searching
+set smartcase                  " Unless you put some caps in your search
+set showmatch                  " Show matching brackets 
+set incsearch                  " Show matches while you search
 
 " Alway use magic mode for regexp
 noremap / /\v
